@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* Reset */
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif;}
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* Navbar */
+    header {
+      background: #222;
+      color: white;
+      padding: 15px 40px;
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+    header h1 { font-size: 22px; }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover { color: #ff9800; }
+
+    /* Hero */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url("https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1400&q=80") no-repeat center/cover;
+      color: white;
+      padding: 20px;
+    }
+    .hero h2 { font-size: 40px; margin-bottom: 15px; }
+    .hero p { font-size: 18px; max-width: 600px; }
+    .hero button {
+      margin-top: 20px;
+      padding: 10px 25px;
+      border: none;
+      background: #ff9800;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+      border-radius: 5px;
+    }
+    .hero button:hover { background: #e67e22; }
+
+    /* Sections */
+    section { padding: 80px 40px; }
+    h2.section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 28px;
+      color: #222;
+      position: relative;
+    }
+    h2.section-title::after {
+      content: '';
+      width: 60px;
+      height: 3px;
+      background: #2200ff;
+      display: block;
+      margin: 10px auto;
+    }
+
+    /* About */
+    .about p { max-width: 700px; margin: auto; line-height: 1.6; text-align: center; }
+
+    /* Skills */
+    .skills {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .skill {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 150px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .skill:hover { transform: translateY(-5px); }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .project img { width: 100%; height: 180px; object-fit: cover; }
+    .project h3 { padding: 15px; font-size: 20px; }
+    .project p { padding: 0 15px 20px; }
+    .project:hover { transform: scale(1.03); }
+
+    /* Contact */
+    .contact { text-align: center; }
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background: #ff9800;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .contact a:hover { background: #e67e22; }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+  
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="DBMS,Python,C language">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="6363009073">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Hi, I'm Dhaval</h2>
+    <p>A passionate Web Developer and Designer who loves building modern and creative websites.</p>
+    <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      Hire Me
+    </button>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <p>I am a Computer Science student passionate about creating clean, modern, and user-friendly web applications. I enjoy solving problems, learning new technologies, and building projects that make a difference.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Python</div>
+      <div class="skill">C++</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=700&q=80" alt="Project 1">
+        <h3>E-commerce Website</h3>
+        <p>A fully responsive shopping site built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=700&q=80" alt="Project 2">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio showcasing my skills and projects.</p>
+      </div>
+      <div class="project">
+        <img src="https://images.unsplash.com/photo-1523475496153-3d6cc0f0e3f0?auto=format&fit=crop&w=700&q=80" alt="Project 3">
+        <h3>Blog Platform</h3>
+        <p>A simple blog with categories and responsive design.</p>
+      </div>
+    </div>
+  </section>
+ś
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact me</h2>
+    <p>Let's connect! You can reach me via email or LinkedIn.</p>
+    <a href="mailto:dhavalkalal95@gmail.com">Email Me</a>
+    <a href="www.linkedin.com/in/dhaval-kalal " target="_blank">LinkedIn</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Dhaval. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
