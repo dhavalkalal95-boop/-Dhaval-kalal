@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UG Resume - Dhaval Kalal</title>
+  <body>
+  <img src="C:\Users\dhava\OneDrive\Desktop\hackton/hackton.jpg">
+  <style>
+    :root{
+      --teal:#16897a;
+      --teal-dark:#0f6659;
+      --muted:#6b6b6b;
+      --accent:#0b9a86;
+      --page-bg:#f4f6f7;
+      --paper:#ffffff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:20px;
+      font-family: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background:var(--page-bg);
+      color:#1b1b1b;
+      -webkit-font-smoothing:antialiased;
+    }
+    .resume{
+      max-width:1000px;
+      margin:0 auto;
+      background:linear-gradient(90deg,var(--teal) 34%, #fff 34%);
+      box-shadow:0 8px 30px rgba(10,10,10,0.12);
+      border-radius:6px;
+      overflow:hidden;
+      display:grid;
+      grid-template-columns: 320px 1fr;
+    }
+    .sidebar{
+      background:var(--teal);
+      color:#fff;
+      padding:32px 28px;
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+      min-height:100%;
+    }
+    .photo{
+      width:120px;height:120px;border-radius:50%;
+      border:6px solid rgba(255,255,255,0.18);
+      overflow:hidden;margin:0 auto;
+      box-shadow:0 6px 18px rgba(0,0,0,0.12);
+    }
+    .photo img{width:100%;height:100%;object-fit:cover;display:block}
+    .name{ text-align:center;margin-top:8px }
+    .name h1{font-size:20px;margin:0 0 4px;font-weight:800;letter-spacing:0.4px}
+    .name p{margin:0;font-size:13px;opacity:0.95}
+
+    .section-title{font-weight:700;margin:6px 0 8px;font-size:13px;border-bottom:1px solid rgba(255,255,255,0.14);padding-bottom:8px}
+    .contact-list, .skills-list, .cert-list{font-size:13px;line-height:1.6}
+    .contact-list a{color:rgba(255,255,255,0.95);text-decoration:none}
+    .summary{font-size:13px;color:rgba(255,255,255,0.95);line-height:1.5}
+    .skills-list ul{margin:6px 0;padding-left:18px}
+    .skills-list li{margin-bottom:6px}
+    .cert-list li{margin-bottom:6px}
+
+    .content{
+      background:var(--paper);
+      padding:28px 36px;
+    }
+    .headline{display:flex;justify-content:space-between;align-items:flex-start}
+    .headline h2{color:var(--teal-dark);margin:0;font-family:'Roboto Slab',serif}
+    .headline .dates{color:var(--muted);font-size:13px;margin-top:4px}
+
+    .experience, .education, .projects, .accomplishments{margin-top:18px}
+    .job{display:flex;justify-content:space-between;gap:20px;padding:12px 0;border-bottom:1px solid #eee}
+    .job:last-child{border-bottom:transparent}
+    .job .left{max-width:72%}
+    .job h3{margin:0;font-size:15px;color:#044a43}
+    .job .company{color:var(--accent);font-weight:600;margin-top:4px}
+    .job p, .job ul{margin:8px 0 0;font-size:13px;color:#333}
+    .job ul{padding-left:18px}
+
+    .edu-item, .project-item{padding:10px 0;border-bottom:1px solid #eee}
+    .edu-item:last-child,.project-item:last-child{border-bottom:transparent}
+    .small{font-size:13px;color:var(--muted)}
+
+    .section-heading{color:var(--teal);font-weight:700;margin-bottom:8px;border-bottom:2px solid rgba(10,10,10,0.03);padding-bottom:6px}
+
+    @media (max-width:820px){
+      .resume{grid-template-columns:1fr;}
+      .sidebar{order:2;padding:20px}
+      .content{order:1;padding:20px}
+      .headline{flex-direction:column;align-items:flex-start;gap:8px}
+    }
+  </style>
+</head>
+  <div class="resume" role="main">
+    <aside class="sidebar">
+      <div style="text-align:center">
+        <div class="photo"><img src="profile.jpg" alt="profile"></div>
+      </div>
+      <div class="name">
+        <h1>DHAVAL KALAL</h1>
+        <p>Hubali, Karnataka</p>
+      </div>
+
+      <div>
+        <div class="section-title">Contact</div>
+        <div class="contact-list">
+          <div>📞 +91-6363009073</div>
+          <div>✉️ <a href="mailto:dhavalkalal95@example.com">dhavalkalal95@example.com</a></div>
+          <div>LinkedIn: linkedin.com/in/dhavalkalal</div>
+          <div>Github: github.com/dhavalkalal</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-title">Summary</div>
+        <div class="summary">
+          Dedicated and detail-oriented B.E. Computer Science student under VTU, with interests in UI/UX Design, Full Stack Web Development, and Project Management. Passionate about developing user-friendly and efficient web applications.
+        </div>
+      </div>
+
+      <div>
+        <div class="section-title">Skills</div>
+        <div class="skills-list">
+          <ul>
+            <li>HTML / CSS / JavaScript</li>
+            <li>Node.js / Express.js</li>
+            <li>MongoDB / Mongoose</li>
+            <li>Python / Java</li>
+            <li>UI / UX Design</li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-title">Certifications</div>
+        <div class="cert-list">
+          <ul>
+            <li>Responsive Web Design - freeCodeCamp</li>
+            <li>Introduction to MongoDB - MongoDB University</li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section class="education">
+        <h2 class="section-heading">Education</h2>
+        <div class="edu-item">
+          <strong>Bachelor of Engineering: Computer Science</strong>
+          <div class="small">Visvesvaraya Technological University (VTU) — 2023 – Present</div>
+          <p class="small">Currently pursuing 5th semester with a focus on UI/UX and Full Stack Development.</p>
+        </div>
+        <div class="edu-item">
+          <strong>Pre-University (12th)</strong>
+          <div class="small">Ksss pu Science & commerce  College — 2022 — 86%</div>
+        </div>
+        <div class="edu-item">
+          <strong>Secondary (10th)</strong>
+          <div class="small">SVEM School — 2020 — 89%</div>
+        </div>
+      </section>
+
+      <section class="projects">
+        <h2 class="section-heading">Projects</h2>
+        <div class="project-item">
+          <strong>Cooking Recipe Portal</strong>
+          <p class="small">A full-stack recipe management web app that allows users to upload, view, search, and manage recipes. Includes admin login, file management, and secure authentication. <br>Technologies: Node.js, Express.js, MongoDB, HTML, CSS</p>
+        </div>
+        <div class="project-item">
+          <strong>Student Study Partner</strong>
+          <p class="small">A student-focused system to manage bills, receipts, and expenses efficiently with categorized reports and secure authentication. <br>Technologies: HTML, CSS, JavaScript, MongoDB, Express</p>
+        </div>
+        <div class="project-item">
+          <strong>Result of Realization and Understanding - Living with Definiteness</strong>
+          <p class="small">A PowerPoint presentation project exploring definiteness and realization concepts under the Value Education module, focusing on human values and understanding.</p>
+        </div>
+      </section>
+
+      <section class="accomplishments">
+        <h2 class="section-heading">Accomplishments</h2>
+        <ul>
+          <li>Presented college seminar on "Living with Definiteness" (2025)</li>
+          <li>Completed mini project under User Interface Design course (BCS46C)</li>
+          <li>Participated in inter-college hackathon - 2024</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
